@@ -25,6 +25,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "songs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::song.song",
+      "mappedBy": "singer"
     }
   }
 }
