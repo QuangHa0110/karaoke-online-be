@@ -47,6 +47,12 @@
       "type": "media",
       "multiple": false,
       "required": true
+    },
+    "singer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::singer.singer",
+      "inversedBy": "songs"
     }
   }
 }
