@@ -22,7 +22,7 @@
     "media": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "videos",
         "audios"
