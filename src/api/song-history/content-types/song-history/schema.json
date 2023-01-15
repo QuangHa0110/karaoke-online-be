@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "song_histories",
+  "info": {
+    "singularName": "song-history",
+    "pluralName": "song-histories",
+    "displayName": "Song History",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "song": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::song.song",
+      "inversedBy": "song_histories"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "song_histories"
+    }
+  }
+}
