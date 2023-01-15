@@ -52,6 +52,12 @@
       "relation": "manyToOne",
       "target": "api::singer.singer",
       "inversedBy": "songs"
+    },
+    "song_histories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::song-history.song-history",
+      "mappedBy": "song"
     }
   }
 }
