@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "my_songs",
+  "info": {
+    "singularName": "my-song",
+    "pluralName": "my-songs",
+    "displayName": "My song",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "song": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::song.song"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
