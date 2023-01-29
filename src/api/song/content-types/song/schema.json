@@ -47,9 +47,9 @@
         "images"
       ]
     },
-    "singer": {
+    "singers": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::singer.singer",
       "inversedBy": "songs"
     },
